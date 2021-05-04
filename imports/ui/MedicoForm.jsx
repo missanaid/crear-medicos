@@ -15,6 +15,7 @@ export const MedicoForm = () => {
   const [formValues, setFormValues] = useState(initialState);
   const { nombres, apellidop, apellidom, rut, especialidad } = formValues;
   const especialidades = getEspecialidad();
+
   const reset = () => {
     setFormValues(initialState);
   };
@@ -99,6 +100,7 @@ export const MedicoForm = () => {
             onChange={handleInputChange}
             value={especialidad}
           >
+            <option value="">Seleccione...</option>
             {especialidades.map((e) => (
               <option key={e.nombre}>{e.nombre}</option>
             ))}
