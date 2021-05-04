@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { MedicosCollection } from "../api/MedicosCollection";
 import { validate } from "rut.js";
-import { Especialidad } from "./Especialidad";
 import { getEspecialidad } from "../selectors/getEspecialidad";
 
 const initialState = {
